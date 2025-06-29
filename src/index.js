@@ -1,13 +1,12 @@
-// src/index.js
-import React from 'react';
-import ReactDOM from 'react-dom/client'; // Use createRoot for React 18+
-import './index.css'; // Import your Tailwind CSS styles
-import App from './App'; // Import your main App component
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-// Create a root and render your App component
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+/* You can add any custom global CSS here */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
