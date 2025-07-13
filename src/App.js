@@ -394,6 +394,117 @@ const flattenStrategicPlan = (plan) => {
 // Initialize initiatives with updates array
 const initialInitiativesWithUpdates = flattenStrategicPlan(strategicPlan);
 
+// GLOBAL CONSTANTS - Defined here to ensure they are available before App component renders
+const totalInitiatives = initialInitiativesWithUpdates.length;
+const totalPriorities = strategicPlan.length;
+
+
+// Modal component for detailed initiative view
+// Added onSaveUpdate prop to allow passing updates back to parent
+const InitiativeDetailModal = ({ initiative, onClose, onSaveUpdate }) => {
+  // Use local state for the initiative being edited within the modal
+  const [currentInitiativeData, setCurrentInitiativeData] = useState(initiative);
+  const [newUpdateText, setNewUpdateText] = useState('');
+
+  // Handle adding a new update
+  const handleAddUpdate = () => {
+    if (newUpdateText.trim()) {
+      const timestamp = new Date().toLocaleString(); // Get current date and time
+      setCurrentInitiativeData(prevData => ({
+        ...prevData,
+        updates: [...prevData.updates, { text: newUpdateText.trim(), timestamp: timestamp }]
+      }));
+      setNewUpdateText(''); // Clear the input field after adding
+    }
+  };
+
+  // Override onClose to save updates before closing
+  const handleClose = () => {
+    onSaveUpdate(currentInitiativeData); // Pass the updated initiative data back
+    onClose(); // Then close the modal
+  };
+
+  if (!currentInitiativeData) return null;
+
+  return (
+    <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50 p-4"
+         onClick={handleClose}> {/* Close modal on overlay click */}
+      <div
+        className="bg-white p-6 rounded-xl shadow-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+        onClick={(e) => e.stopPropagation()} // Prevent clicks on modal content from closing
+      >
+        <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+          <Info className="mr-2" />Initiative Details
+        </h3>
+        <p className="mb-2"><strong className="text-gray-700">Name:</strong> {currentInitiativeData.name}</p>
+        <p className="mb-2"><strong className="text-gray-700">Priority:</strong> {currentInitiativeData.priority}</p>
+        <p className="mb-2"><strong className="text-gray-700">Strategic Goal:</strong> {currentInitiativeData.strategicGoal}</p>
+        <p className="mb-2"><strong className="text-gray-700">Owner:</strong> {currentInitiativeData.owner}</p>
+        {currentInitiativeData.department && <p className="mb-2"><strong className="text-gray-700">Department:</strong> {currentInitiativeData.department}</p>}
+        <p className="mb-2"><strong className="text-gray-700">Timeline:</strong> {currentInitiativeData.timeline}</p>
+        <p className="mb-2"><strong className="text-gray-700">Status:</strong> <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium capitalize ${
+          currentInitiativeData.status === 'On Track' ? 'bg-green-100 text-green-800' :
+          currentInitiativeData.status === 'At Risk' ? 'bg-yellow-100 text-yellow-800' :
+          'bg-blue-100 text-blue-800'
+        }`}>{currentInitiativeData.status}</span></p>
+        <div className="mb-2">
+          <strong className="text-gray-700 block mb-1">Major Milestones (Summary):</strong>
+          <ul className="list-disc list-inside space-y-1 text-gray-700">
+            {currentInitiativeData.milestones.map((m, idx) => <li key={idx}>{m}</li>)}
+          </ul>
+        </div>
+        <div className="mb-4">
+          <strong className="text-gray-700 block mb-1">Full Targets:</strong>
+          <p className="text-gray-700 whitespace-pre-wrap">{currentInitiativeData.fullTargets}</p>
+        </div>
+
+        {/* NEW: Updates Section */}
+        <div className="mb-4 border-t pt-4 mt-4">
+          <strong className="text-gray-700 block mb-2">Updates:</strong>
+          {currentInitiativeData.updates.length > 0 ? (
+            <ul className="list-disc list-inside space-y-2 text-gray-700 text-sm">
+              {currentInitiativeData.updates.map((update, idx) => (
+                <li key={idx} className="bg-gray-50 p-2 rounded-md">
+                  <span className="font-semibold text-gray-600 mr-2">[{update.timestamp}]</span>
+                  {update.text}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="text-gray-500 text-sm">No updates yet.</p>
+          )}
+
+          <div className="mt-4">
+            <textarea
+              className="w-full p-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-sm"
+              rows="3"
+              placeholder="Add a new update..."
+              value={newUpdateText}
+              onChange={(e) => setNewUpdateText(e.target.value)}
+            ></textarea>
+            <button
+              onClick={handleAddUpdate}
+              className="mt-2 px-4 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 transition duration-150 ease-in-out text-sm"
+            >
+              Add Update
+            </button>
+          </div>
+        </div>
+
+        <div className="flex justify-end mt-6">
+          <button
+            onClick={handleClose}
+            className="px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition duration-150 ease-in-out cursor-pointer"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
 function App() {
   // Use a functional update to ensure initial state is correctly set only once
   const [initiatives, setInitiatives] = useState(() => initialInitiativesWithUpdates);
@@ -430,12 +541,12 @@ function App() {
     const atRiskCount = initiatives.filter(i => i.status === 'At Risk').length;
     const completeCount = initiatives.filter(i => i.status === 'Complete').length;
     return { onTrackCount, atRiskCount, completeCount };
-  }, [initiatives]); // Changed dependency to 'initiatives' to reflect live updates
+  }, [initiatives]);
 
   const priorityCardData = useMemo(() => {
     const data = {};
     strategicPlan.forEach(priority => {
-      const initiativesInPriority = initiatives.filter(i => i.priority === priority.priorityName); // Changed to 'initiatives'
+      const initiativesInPriority = initiatives.filter(i => i.priority === priority.priorityName);
       const total = initiativesInPriority.length;
       const onTrack = initiativesInPriority.filter(i => i.status === 'On Track').length;
       const atRisk = initiativesInPriority.filter(i => i.status === 'At Risk').length;
@@ -443,7 +554,7 @@ function App() {
       data[priority.priorityName] = { total, onTrack, atRisk, complete };
     });
     return data;
-  }, [initiatives]); // Changed dependency to 'initiatives' to reflect live updates
+  }, [initiatives]);
 
   const getStatusDisplay = (status) => {
     switch (status) {
