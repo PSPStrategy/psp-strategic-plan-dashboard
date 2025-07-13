@@ -727,11 +727,11 @@ function App() {
           </h1>
         </div>
         <div className="flex items-center space-x-4 mt-2 sm:mt-0">
-          {/* QR Code section updated with actual QR code image and Microsoft Forms URL */}
+          {/* QR Code section updated with the new image file name and Microsoft Forms URL */}
           <div className="relative flex flex-col items-center">
             <a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=r5uQzsNHhUKxGbME-yzjx_gdsBmdLhdKtbocasoI3XBUMDk1SVhYVDJHSjYwTzM2S1QyQUg1VTRXVi4u" target="_blank" rel="noopener noreferrer">
               <img
-                src="/QRCode for PSP Flight Path Updates.jpg" // Path to the uploaded QR code image
+                src="/QRCode for PSP Flight Path Updates Small.jpeg" // Updated path to the new image file name
                 alt="QR Code for PSP Flight Path Updates"
                 className="rounded-lg shadow-md hover:opacity-80 transition-opacity duration-200"
               />
