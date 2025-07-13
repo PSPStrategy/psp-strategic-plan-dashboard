@@ -13,13 +13,11 @@ const strategicPlan = [
             name: "Coordinate with City leadership to achieve workforce capacity required",
             timeline: "2025-2026",
             targets: "18 additional custodial and maintenance, engineering, and innovation technology staff hired and onboarded by end of FY2026",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Heighten awareness of aviation and increase local talent pool by co-creating Airport Operations and Management program (with internships) at College of the Desert and through Coachella Valley high schools",
             timeline: "2025-2026",
             targets: "5 College of the Desert graduates and 5 local high school graduates as Interns and full-time employees by 2026",
-            progressUpdates: [] // Empty array
           },
         ]
       },
@@ -30,19 +28,16 @@ const strategicPlan = [
             name: "Develop and commit to annual staff work culture survey and post-results town hall style discussion",
             timeline: "2025-2029",
             targets: "Launch survey and town hall in 2025, 100% completion of survey by 2026, 85% staff satisfaction rating by 2027, 90% by 2028, 95% by 2029",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Organization-wide launch of employee feedback tools",
-            timeline: "2025",
+            timeline: "2025", // This should now represent Q1 2025
             targets: "Launch Q1 2025",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Town hall style Strategic Plan Launch to empower all employees to own the new vision, mission and values while protecting work-life balance",
-            timeline: "2025-2026",
+            timeline: "2025-2026", // This should now represent 2025 to Q1 2026
             targets: "Year recap session Q4 2025, Q1 2026 review of Plan achievements",
-            progressUpdates: [] // Empty array
           },
         ]
       },
@@ -53,19 +48,16 @@ const strategicPlan = [
             name: "Formalize and launch standardized career and development plan, and mentorship plan, for all employees",
             timeline: "2025-Q2 2026",
             targets: "Plan in place by Q2, 2026",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Expand Intro to Operations program for all program areas to engage employees in new learning opportunities",
             timeline: "2025-2029",
             targets: "Plan in place by Q3, 2025 with dedicated program support annually",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Expand airport-paid training opportunities and formalize applications through staff mentors",
             timeline: "2025-2029",
             targets: "Plan in place by Q2, 2025 with dedicated program support annually",
-            progressUpdates: [] // Empty array
           },
         ]
       },
@@ -76,13 +68,11 @@ const strategicPlan = [
             name: "Standardize DEI approach with City HR team to ensure PSP is attracting a fully diverse candidate range for job postings",
             timeline: "2025-2029",
             targets: "Approach standardized by Q2",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Identify barriers to success and pathways to encourage and support under-represented employees to train for and take on supervisory/management roles",
             timeline: "2025-2029",
             targets: "Plan in place by Q2, 2025 with dedicated program support annually",
-            progressUpdates: [] // Empty array
           },
         ]
       },
@@ -98,31 +88,26 @@ const strategicPlan = [
             name: "Design and implement a comprehensive and integrated operational framework that holistically sets out effective and efÏcient processes, procedures and actions",
             timeline: "2025-2029",
             targets: "Framework developed and created by Q4, 2025. Annual assessments and refinements conducted by Q2 each year",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Develop Operational Readiness, Activation and Transition (ORAT) program to ensure construction of new infrastructure becomes an immediate asset and value-add to PSP operations",
             timeline: "2025-2029",
             targets: "Develop between 2025–2006 and implement by Q2, 2027",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Develop and launch a formal Safety Management System (SMS) program to ensure ongoing safety policies, procedures and actions remain embedded in all of PSP’s operations",
             timeline: "2025-Q2 2027",
             targets: "Create program for launch by Q3, 2025, with full implementation by Q2, 2026",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Complete general assessments of current operations and safety practices at PSP",
             timeline: "2025-Q2 2026",
             targets: "Assessment program completion by Q4, 2025. Launch implementation of recommendations by Q2, 2026",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Create and deploy standardized training and procedures for operations and safety programs at PSP",
             timeline: "2025-Q2 2026",
             targets: "Develop training modules and operational modules by Q2, 2025. Annual assessments and refinements conducted by Q2 each year",
-            progressUpdates: [] // Empty array
           },
         ]
       },
@@ -133,19 +118,16 @@ const strategicPlan = [
             name: "Develop and launch ongoing integrated consumer research and guest experience development programs at PSP",
             timeline: "2025-2029",
             targets: "Guest research and experience development programs designed and implemented by Q2, 2026. Annual assessments and refinements conducted by Q2 each year",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Design and implement guest experience consultations and co-ordinated and consistent end-to-end service practices and approaches with all airport campus partners",
             timeline: "2025-2029",
             targets: "Launch consultations with airport partners throughout 2025. Set up a multi-partner Team PSP Guest Experience Steering Group in Q1, 2026 to develop consistent and exceptional service standards and programs throughout all organizations. Annual assessments and refinements conducted in Q4 each year",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Plan, track, attain and maintain high levels of guest satisfaction and seamless wayfinding standards throughout airport construction program",
             timeline: "2025-2029",
             targets: "Design consistent high-impact storyboards on PSP’s future by Q2, 2025. Implement as required. Attain 85% satisfaction rates for guest experience and ease of wayfinding through regular guest surveys. Continue to address and continue to reduce the number of complaints received",
-            progressUpdates: [] // Empty array
           },
         ]
       },
@@ -156,19 +138,16 @@ const strategicPlan = [
             name: "Incorporate newer established technology at parking lots, and passenger and employee checkpoints to increase efÏciency and throughput",
             timeline: "2025-2029",
             targets: "New checkpoint technology introduced by Q3, 2025, and fully integrated by Q1, 2026. Annual assessments and refinements by Q4 each year",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Develop and introduce digitization pilot programs (such as AI, Augmented Reality etc.) to assess impacts on guest experience and operational effectiveness",
             timeline: "2025-2029",
             targets: "Pilot program introduction by 2026, with annual assessment and refinements by Q4 each year.",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Introduce a new state-of-the-art security system (CCTV, intrusion detection, etc.) to maintain the integrity of airport facilities and operations",
             timeline: "2025-2029",
             targets: "New security system introduced by Q4, 2025, with full implementation by Q3, 2026. Annual assessments and refinements by Q4 each year.",
-            progressUpdates: [] // Empty array
           },
         ]
       },
@@ -184,19 +163,16 @@ const strategicPlan = [
             name: "Organize quarterly meetings with each key airport partner group to discuss shared goals, challenges, and opportunities for improvement",
             timeline: "2025-2029",
             targets: "Launch cycle of structured and formalized airport partner meetings every quarter by Q2, 2025, and continue schedule through 2029",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Create and launch a digital platform where partners can access resources, operational updates, and tools for collaboration",
             timeline: "2025-2029",
             targets: "Digital web-page platform (ProgressPSP.com) designed and rolled-out by Q2, 2026, and is maintained and enhanced each year",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Implement feedback mechanisms, including bi-annual surveys and focus groups, to gather input and address partner needs proactively",
             timeline: "Q3 2025, Q3 2026",
             targets: "Program launch in Q3, 2025 and, repeated in 2027 and 2029",
-            progressUpdates: [] // Empty array
           },
         ]
       },
@@ -207,19 +183,16 @@ const strategicPlan = [
             name: "Develop comprehensive revenue-sharing agreements with concessionaires and service providers",
             timeline: "2025-2029",
             targets: "Convert most promising partnership engagement program outcomes into 3 pilot revenue-sharing agreements between 2025 and 2029",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Establish new business development opportunities through ongoing joint ventures",
             timeline: "2025-2029",
             targets: "Convert most promising partnership engagement program outcomes into 2 pilot joint venture agreements between 2025 and 2029",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Create innovative sponsorship and advertising programs",
             timeline: "2025-2028",
             targets: "Design multi-year sponsorship and advertising packages by Q1, 2026 and assess ROI through 2027 and 2028",
-            progressUpdates: [] // Empty array
           },
         ]
       },
@@ -230,19 +203,16 @@ const strategicPlan = [
             name: "Develop an annual report highlighting PSP’s contributions to the local economy, job creation, and tourism, and share it with community stakeholders",
             timeline: "2025-2029",
             targets: "Report broadcast by Q1 each year, with reviews and refinements annually",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Encourage local and small business entities to participate in PSP’s operations, by conducting semi-annual outreach, particularly in concessions, events, and sustainability initiatives",
             timeline: "2025-2029",
             targets: "Design and launch community outreach program in 2025, and expand program each year",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Host annual roundtable events for local government and community representatives to discuss shared goals, such as community economic development, tourism promotion and infrastructure projects.",
             timeline: "2025-2029",
             targets: "Design and implement annual roundtable events by Q4, 2025 and commit to annual frequency through to 2029",
-            progressUpdates: [] // Empty array
           },
         ]
       },
@@ -258,19 +228,16 @@ const strategicPlan = [
             name: "Develop a 5-year capital budget that forecasts funding needs and allocates resources based on project urgency, ROI, and alignment with strategic priorities",
             timeline: "2025-2029",
             targets: "5-year capital budget delivered by Q2, 2025. Annual assessment and refinements conducted by Q2 of each subsequent year",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Design and Implement an infrastructure scoring system to evaluate projects based on factors such as impact on passenger throughput and guest experience, regulatory compliance, and long-term operational benefits",
             timeline: "2025-2029",
             targets: "Infrastructure scoring system and evaluation process developed and launched by Q3, 2025. Annual review and refinements conducted by Q2 of each subsequent year",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Regularly assess progress on infrastructure planning and make necessary adjustments based on evolving priorities or unexpected changes",
             timeline: "2025-2029",
             targets: "Comprehensive quarterly assessment program established by Q3, 2025. Annual program review and refinements conducted by Q2 of each subsequent year",
-            progressUpdates: [] // Empty array
           },
         ]
       },
@@ -281,19 +248,16 @@ const strategicPlan = [
             name: "Enable expanded international air service development by establishing Federal Inspection Services facilities and Customs and Border Protection personnel at PSP",
             timeline: "2025-2029",
             targets: "FIS facilities and CBP presence established by Q1, 2027 Year-round non-stop service to Chicago, Atlanta or New York by Q1, 2027 Expand international service to secondary Canadian non-preclearance cities and establish 1 new route to a Mexican destination by Q1, 2028 3% annual passenger growth and establish infrastructure strategy for cargo growth by Q1, 2027",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Pursue and maximize air service development opportunities for PSP in passenger and cargo markets (routes, route capacity, frequency, competition/customer choice)",
             timeline: "2025-Q1 2027",
             targets: "Business plan developed and implemented by Q4, 2025 Facility plan developed and implemented by Q4, 2025",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Maximize non-aeronautical revenue opportunities for the community’s asset through an aligned airport-wide business plan and facility development plan (e.g. for Parking, Consolidated Rent-A-Car facility, Concessions and Other Services)",
             timeline: "2025-Q4 2025",
             targets: "Business plan developed and implemented by Q4, 2025",
-            progressUpdates: [] // Empty array
           },
         ]
       },
@@ -304,13 +268,11 @@ const strategicPlan = [
             name: "Build and implement program for the successful management and maintenance of facilities throughout facility expansion and construction phasing",
             timeline: "2025-Q4 2025",
             targets: "Program built and launched by Q3, 2025",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Secure and deploy executive management consultant to support the implementation of the: capital program; expansion and construction sequencing; and the organizational strategy",
             timeline: "2025-2029",
             targets: "Executive management consultant retained by Q1, 2025. Overarching program plan developed and launched by Q3, 2025. Annual review and refinements conducted by Q2 of each subsequent year",
-            progressUpdates: [] // Empty array
           },
         ]
       },
@@ -326,31 +288,26 @@ const strategicPlan = [
             name: "Hire and onboard a PSP Sustainability Specialist",
             timeline: "Q2 2025",
             targets: "Sustainability Specialist onboard by Q2, 2025",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Conduct a detailed assessment of all current organizational and airport management activities and, create a holistic action plan to adopt sustainable operating practices",
             timeline: "2025-Q1 2026",
             targets: "Sustainability action plan launched Q1, 2026",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Create a comprehensive recycling program throughout PSP",
             timeline: "2025 - Q1 2026",
             targets: "Phase 1 of airport recycling program launched by Q3, 2025 Phase 2 of airport recycling program launched by Q1, 2026",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Transition to renewable energy sources in alignment with City, state and federal climate goals",
             timeline: "2025-Q1 2029",
             targets: "Ensure complete alignment with established local, state and federal renewable energy targets by Q1, 2029",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Establish Airport Council International –North America’s Carbon Reduction Accreditation Program at PSP",
             timeline: "2025-2029",
             targets: "Achieve Level 1 Program status by 2026 and Level 2 Program status by 2029",
-            progressUpdates: [] // Empty array
           },
         ]
       },
@@ -361,19 +318,16 @@ const strategicPlan = [
             name: "Establish and implement net-zero carbon, energy and waste frameworks within organization",
             timeline: "2025-Q1 2027",
             targets: "Net-zero carbon, energy and waste frameworks completed by Q1, 2026 Program implemented by Q2, 2026 Program assessed, enhanced and fully embedded annually by Q1, 2027",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Identify and implement joint or supportive net-zero emissions strategies with key PSP stakeholder groups",
             timeline: "2025-2029",
             targets: "PSP & Stakeholder Co-operative Net Zero Emissions Strategy Assessment completed by Q3, 2026 Program implemented by Q1, 2027 and assessed and refined annually",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Develop and implement lease and use agreements that jointly reduce climate impacts and improve climate action goals",
             timeline: "2025-2029",
             targets: "New lease and use agreements developed by Q4, 2025 Program implemented by Q1, 2026 and assessed and refined annually",
-            progressUpdates: [] // Empty array
           },
         ]
       },
@@ -384,13 +338,11 @@ const strategicPlan = [
             name: "Conduct and communicate an annual financial assessment of market conditions and related sustainability implications",
             timeline: "2025-2029",
             targets: "First financial assessment report developed and broadcast by Q2, 2025. Report reviewed and refined annually",
-            progressUpdates: [] // Empty array
           },
           {
             name: "Develop policies and programs for fiscal management that track and report on both climate and operating impacts",
             timeline: "2025-2029",
             targets: "Introduce policy and program refinements to fiscal management area by Q2, 2026. Review and refine annually",
-            progressUpdates: [] // Empty array
           },
         ]
       },
@@ -414,7 +366,7 @@ const flattenStrategicPlan = (plan) => {
   plan.forEach(priority => {
     priority.strategicGoals.forEach(goal => {
       goal.initiatives.forEach(initiative => {
-        // Simulate progress for milestones (this is still random, not real data)
+        // Simulate progress for milestones
         const simulatedProgress = Math.floor(Math.random() * 90) + 10; // Random progress between 10% and 99%
 
         initiatives.push({
@@ -431,7 +383,7 @@ const flattenStrategicPlan = (plan) => {
           ],
           strategicGoal: goal.goalName,
           fullTargets: initiative.targets, // Store full targets for detailed view in modal
-          progressUpdates: initiative.progressUpdates || [], // Ensure this field exists, even if empty
+          updates: [], // NEW: Initialize an empty array for updates
         });
       });
     });
@@ -446,178 +398,106 @@ const totalPriorities = strategicPlan.length;
 const COLORS = ['#8884d8', '#82ca9d', '#ffc658', '#FF8042', '#00C49F', '#FFBB28', '#A28FDB', '#FF6B6B', '#6FCF97']; // Extended colors
 
 // Modal component for detailed initiative view
-const InitiativeDetailModal = ({ initiative, onClose }) => {
-  if (!initiative) return null;
+// Added onSaveUpdate prop to allow passing updates back to parent
+const InitiativeDetailModal = ({ initiative, onClose, onSaveUpdate }) => {
+  // Use local state for the initiative being edited within the modal
+  const [currentInitiativeData, setCurrentInitiativeData] = useState(initiative);
+  const [newUpdateText, setNewUpdateText] = useState('');
+
+  // Handle adding a new update
+  const handleAddUpdate = () => {
+    if (newUpdateText.trim()) {
+      const timestamp = new Date().toLocaleString(); // Get current date and time
+      setCurrentInitiativeData(prevData => ({
+        ...prevData,
+        updates: [...prevData.updates, { text: newUpdateText.trim(), timestamp: timestamp }]
+      }));
+      setNewUpdateText(''); // Clear the input field after adding
+    }
+  };
+
+  // Override onClose to save updates before closing
+  const handleClose = () => {
+    onSaveUpdate(currentInitiativeData); // Pass the updated initiative data back
+    onClose(); // Then close the modal
+  };
+
+  if (!currentInitiativeData) return null;
 
   return (
     <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50 p-4"
-         onClick={() => {
-           console.log("Overlay clicked. Calling onClose.");
-           onClose();
-         }}>
+         onClick={handleClose}> {/* Close modal on overlay click */}
       <div
         className="bg-white p-6 rounded-xl shadow-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto"
-        onClick={(e) => {
-          console.log("Modal content clicked. Stopping propagation.");
-          e.stopPropagation();
-        }}
+        onClick={(e) => e.stopPropagation()} // Prevent clicks on modal content from closing
       >
         <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
           <Info className="mr-2" />Initiative Details
         </h3>
-        <p className="mb-2"><strong className="text-gray-700">Name:</strong> {initiative.name}</p>
-        <p className="mb-2"><strong className="text-gray-700">Priority:</strong> {initiative.priority}</p>
-        <p className="mb-2"><strong className="text-gray-700">Strategic Goal:</strong> {initiative.strategicGoal}</p>
-        <p className="mb-2"><strong className="text-gray-700">Owner:</strong> {initiative.owner}</p>
-        {initiative.department && <p className="mb-2"><strong className="text-gray-700">Department:</strong> {initiative.department}</p>}
-        <p className="mb-2"><strong className="text-gray-700">Timeline:</strong> {initiative.timeline}</p>
+        <p className="mb-2"><strong className="text-gray-700">Name:</strong> {currentInitiativeData.name}</p>
+        <p className="mb-2"><strong className="text-gray-700">Priority:</strong> {currentInitiativeData.priority}</p>
+        <p className="mb-2"><strong className="text-gray-700">Strategic Goal:</strong> {currentInitiativeData.strategicGoal}</p>
+        <p className="mb-2"><strong className="text-gray-700">Owner:</strong> {currentInitiativeData.owner}</p>
+        {currentInitiativeData.department && <p className="mb-2"><strong className="text-gray-700">Department:</strong> {currentInitiativeData.department}</p>}
+        <p className="mb-2"><strong className="text-gray-700">Timeline:</strong> {currentInitiativeData.timeline}</p>
         <p className="mb-2"><strong className="text-gray-700">Status:</strong> <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium capitalize ${
-          initiative.status === 'On Track' ? 'bg-green-100 text-green-800' :
-          initiative.status === 'At Risk' ? 'bg-yellow-100 text-yellow-800' :
+          currentInitiativeData.status === 'On Track' ? 'bg-green-100 text-green-800' :
+          currentInitiativeData.status === 'At Risk' ? 'bg-yellow-100 text-yellow-800' :
           'bg-blue-100 text-blue-800'
-        }`}>{initiative.status}</span></p>
+        }`}>{currentInitiativeData.status}</span></p>
         <div className="mb-2">
           <strong className="text-gray-700 block mb-1">Major Milestones (Summary):</strong>
           <ul className="list-disc list-inside space-y-1 text-gray-700">
-            {initiative.milestones.map((m, idx) => <li key={idx}>{m}</li>)}
+            {currentInitiativeData.milestones.map((m, idx) => <li key={idx}>{m}</li>)}
           </ul>
         </div>
         <div className="mb-4">
           <strong className="text-gray-700 block mb-1">Full Targets:</strong>
-          <p className="text-gray-700 whitespace-pre-wrap">{initiative.fullTargets}</p>
+          <p className="text-gray-700 whitespace-pre-wrap">{currentInitiativeData.fullTargets}</p>
         </div>
 
-        {/* NEW SECTION: Progress Log */}
-        {initiative.progressUpdates && initiative.progressUpdates.length > 0 && (
-          <div className="mb-4 mt-6 border-t pt-4 border-gray-200">
-            <strong className="text-gray-700 block mb-2 text-lg">Progress Log:</strong>
-            <div className="space-y-3">
-              {initiative.progressUpdates
-                .sort((a, b) => new Date(b.date) - new Date(a.date)) // Sort by date, newest first
-                .map((update, idx) => (
-                  <div key={idx} className="bg-gray-50 p-3 rounded-lg shadow-sm text-sm text-gray-800">
-                    <p className="font-semibold text-gray-600 mb-1">{update.date}:</p>
-                    <p>{update.text}</p>
-                  </div>
-                ))}
-            </div>
-          </div>
-        )}
-        {/* END NEW SECTION */}
+        {/* NEW: Updates Section */}
+        <div className="mb-4 border-t pt-4 mt-4">
+          <strong className="text-gray-700 block mb-2">Updates:</strong>
+          {currentInitiativeData.updates.length > 0 ? (
+            <ul className="list-disc list-inside space-y-2 text-gray-700 text-sm">
+              {currentInitiativeData.updates.map((update, idx) => (
+                <li key={idx} className="bg-gray-50 p-2 rounded-md">
+                  <span className="font-semibold text-gray-600 mr-2">[{update.timestamp}]</span>
+                  {update.text}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="text-gray-500 text-sm">No updates yet.</p>
+          )}
 
-        <div className="flex justify-end mt-6"> {/* Adjusted margin-top */}
+          <div className="mt-4">
+            <textarea
+              className="w-full p-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-sm"
+              rows="3"
+              placeholder="Add a new update..."
+              value={newUpdateText}
+              onChange={(e) => setNewUpdateText(e.target.value)}
+            ></textarea>
+            <button
+              onClick={handleAddUpdate}
+              className="mt-2 px-4 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 transition duration-150 ease-in-out text-sm"
+            >
+              Add Update
+            </button>
+          </div>
+        </div>
+
+        <div className="flex justify-end mt-6">
           <button
-            onClick={() => {
-              console.log("Close button clicked. Calling onClose.");
-              onClose();
-            }}
+            onClick={handleClose}
             className="px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition duration-150 ease-in-out cursor-pointer"
           >
             Close
           </button>
         </div>
       </div>
-    </div>
-  );
-};
-
-const parsePointInTime = (partStr) => {
-  const match = partStr.match(/(\d{4})(?:-Q([1-4]))?/);
-  if (match) {
-    const year = parseInt(match[1], 10);
-    const quarter = match[2] ? parseInt(match[2], 10) : null;
-    return year + (quarter ? (quarter - 1) / 4 : 0);
-  }
-  return null;
-};
-
-const getExclusiveEndTime = (partStr) => {
-  const match = partStr.match(/(\d{4})(?:-Q([1-4]))?/);
-  if (match) {
-    const year = parseInt(match[1], 10);
-    const quarter = match[2] ? parseInt(match[2], 10) : null;
-    if (quarter) {
-      return year + quarter / 4;
-    } else {
-      return year + 1;
-    }
-  }
-  return null;
-};
-
-const TimelineBar = ({ timeline }) => {
-  const globalStartYear = 2025;
-  const globalEndYear = 2029;
-  const years = Array.from({ length: globalEndYear - globalStartYear + 1 }, (_, i) => globalStartYear + i);
-
-  const parseTimelineRange = (timelineStr) => {
-    const parts = timelineStr.split('-').map(p => p.trim());
-    let startFloat, endFloat;
-
-    if (parts.length === 1) {
-      const initialParseTime = parsePointInTime(parts[0]);
-      if (initialParseTime !== null) {
-        startFloat = initialParseTime;
-        if (!parts[0].includes('Q')) {
-          endFloat = initialParseTime + 1/4;
-        } else {
-          endFloat = initialParseTime + 1/4;
-        }
-      } else {
-        console.error("Invalid timeline string:", timelineStr);
-        return { start: globalStartYear, end: globalStartYear + 1 };
-      }
-    } else {
-      startFloat = parsePointInTime(parts[0]);
-      endFloat = getExclusiveEndTime(parts[1]);
-
-      if (startFloat === null || endFloat === null) {
-        console.error("Invalid timeline string in range format:", timelineStr);
-        return { start: globalStartYear, end: globalStartYear + 1 };
-      }
-
-      if (!parts[1].includes('Q')) {
-          const endYearMatch = parts[1].match(/(\d{4})/);
-          if (endYearMatch) {
-              endFloat = parseInt(endYearMatch[1]) + 1/4;
-          }
-      }
-    }
-
-    return { start: startFloat, end: endFloat };
-  };
-
-  const { start: initiativeStart, end: initiativeEnd } = parseTimelineRange(timeline);
-
-  return (
-    <div className="flex items-center w-full max-w-sm h-9 bg-gray-100 rounded-md overflow-hidden border border-gray-300">
-      {years.map(year => {
-        const yearSegmentStart = year;
-        const yearSegmentEnd = year + 1;
-
-        const overlapStart = Math.max(initiativeStart, yearSegmentStart);
-        const overlapEnd = Math.min(initiativeEnd, yearSegmentEnd);
-
-        let fillWidthPercentage = 0;
-        if (overlapEnd > overlapStart) {
-          fillWidthPercentage = ((overlapEnd - overlapStart) / (yearSegmentEnd - yearSegmentStart)) * 100;
-        }
-
-        fillWidthPercentage = Math.max(0, Math.min(100, fillWidthPercentage));
-
-        return (
-          <div
-            key={year}
-            className="relative h-full flex-1 border-r border-gray-300 last:border-r-0 flex items-center justify-center"
-            title={`${timeline}`}
-          >
-            <div
-              className="absolute h-full bg-green-300 transition-all duration-300 ease-out"
-              style={{ width: `${fillWidthPercentage}%`, left: '0', borderRadius: '2px' }}
-            ></div>
-          </div>
-        );
-      })}
     </div>
   );
 };
@@ -634,6 +514,15 @@ function App() {
   const uniqueOwners = useMemo(() => ['All', ...owners], []);
   const uniqueStatuses = useMemo(() => ['All', ...new Set(initialInitiatives.map(i => i.status))], []);
   const uniquePriorities = useMemo(() => ['All', ...new Set(strategicPlan.map(p => p.priorityName))], []);
+
+  // Function to handle saving updates from the modal back to the main state
+  const handleSaveInitiativeUpdate = (updatedInitiative) => {
+    setInitiatives(prevInitiatives =>
+      prevInitiatives.map(init =>
+        init.id === updatedInitiative.id ? updatedInitiative : init
+      )
+    );
+  };
 
   const filteredInitiatives = useMemo(() => {
     return initiatives.filter(initiative => {
@@ -716,19 +605,13 @@ function App() {
       "Timeline",
       "Status",
       "Full Targets",
-      "Progress Updates" // Added for CSV export
+      "Updates" // Added Updates header for CSV
     ];
 
     const csvRows = [];
     csvRows.push(headers.map(escapeCsvField).join(','));
 
     filteredInitiatives.forEach(initiative => {
-      // Flatten progress updates for CSV
-      const progressUpdatesText = initiative.progressUpdates
-        .sort((a, b) => new Date(a.date) - new Date(b.date)) // Sort chronologically for CSV
-        .map(update => `${update.date}: ${update.text}`)
-        .join(' | '); // Use a clear separator for multiple updates
-
       const row = [
         initiative.priority,
         initiative.strategicGoal,
@@ -737,7 +620,7 @@ function App() {
         initiative.timeline,
         initiative.status,
         initiative.fullTargets,
-        progressUpdatesText // Added for CSV export
+        initiative.updates.map(u => `[${u.timestamp}] ${u.text}`).join(' | ') // Join updates for CSV
       ].map(escapeCsvField);
       csvRows.push(row.join(','));
     });
@@ -803,13 +686,13 @@ function App() {
           </h1>
         </div>
         <div className="flex items-center space-x-4 mt-2 sm:mt-0">
-          {/* QR Code section updated with the new image file name and Microsoft Forms URL */}
+          {/* QR Code section updated with actual QR code image and Microsoft Forms URL */}
           <div className="relative flex flex-col items-center">
             <a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=r5uQzsNHhUKxGbME-yzjx_gdsBmdLhdKtbocasoI3XBUMDk1SVhYVDJHSjYwTzM2S1QyQUg1VTRXVi4u" target="_blank" rel="noopener noreferrer">
               <img
-                src="/QRCode for PSP Flight Path Updates Small.jpeg" // Path to the uploaded QR code image
+                src="/QRCode for PSP Flight Path Updates.jpg" // Path to the uploaded QR code image
                 alt="QR Code for PSP Flight Path Updates"
-                className="rounded-lg shadow-md hover:opacity-80 transition-opacity duration-200 w-16 h-16" // Added w-16 h-16 for smaller size
+                className="rounded-lg shadow-md hover:opacity-80 transition-opacity duration-200"
               />
             </a>
             <p className="text-xs text-center mt-1 opacity-80">Scan for Flight Path Updates</p>
@@ -890,7 +773,7 @@ function App() {
       </section>
 
       {/* Filters and Initiatives Table */}
-      <section id="filters-and-table-section" className="grid grid-cols-1 lg:grid-cols-4 xl:grid-cols-5 gap-6 mb-8">
+      <section id="filters-and-table-section" className="grid grid-cols-1 lg:grid-cols-4 xl:col-span-5 gap-6 mb-8">
         {/* Filters Card */}
         <div id="filters-section" className="bg-white p-6 rounded-xl shadow-md lg:col-span-1">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center"><ClipboardList className="mr-2" />Filter Initiatives</h2>
@@ -1008,7 +891,7 @@ function App() {
       </footer>
 
       {/* Initiative Detail Modal */}
-      {showDetailModal && <InitiativeDetailModal initiative={currentInitiative} onClose={handleCloseModal} />}
+      {showDetailModal && <InitiativeDetailModal initiative={currentInitiative} onClose={handleCloseModal} onSaveUpdate={handleSaveInitiativeUpdate} />}
     </div>
   );
 }
