@@ -13,11 +13,19 @@ const strategicPlan = [
             name: "Coordinate with City leadership to achieve workforce capacity required",
             timeline: "2025-2026",
             targets: "18 additional custodial and maintenance, engineering, and innovation technology staff hired and onboarded by end of FY2026",
+            progressUpdates: [
+              { date: "2025-07-12", text: "Successfully completed initial interviews with 5 candidates. On track for Q3 hiring. Identified potential for 2 additional roles." },
+              { date: "2025-06-28", text: "Met with City HR to finalize job descriptions and recruitment strategy. Minor delays in internal approvals but still on track." },
+              { date: "2025-06-14", text: "Initial meeting with City leadership to discuss capacity needs for FY2026. Positive feedback received on proposed staffing plan." }
+            ]
           },
           {
             name: "Heighten awareness of aviation and increase local talent pool by co-creating Airport Operations and Management program (with internships) at College of the Desert and through Coachella Valley high schools",
             timeline: "2025-2026",
             targets: "5 College of the Desert graduates and 5 local high school graduates as Interns and full-time employees by 2026",
+            progressUpdates: [
+              { date: "2025-07-05", text: "Initial discussions held with College of the Desert faculty regarding curriculum development. Strong interest expressed." }
+            ]
           },
         ]
       },
@@ -28,16 +36,19 @@ const strategicPlan = [
             name: "Develop and commit to annual staff work culture survey and post-results town hall style discussion",
             timeline: "2025-2029",
             targets: "Launch survey and town hall in 2025, 100% completion of survey by 2026, 85% staff satisfaction rating by 2027, 90% by 2028, 95% by 2029",
+            progressUpdates: []
           },
           {
             name: "Organization-wide launch of employee feedback tools",
             timeline: "2025", // This should now represent Q1 2025
             targets: "Launch Q1 2025",
+            progressUpdates: []
           },
           {
             name: "Town hall style Strategic Plan Launch to empower all employees to own the new vision, mission and values while protecting work-life balance",
             timeline: "2025-2026", // This should now represent 2025 to Q1 2026
             targets: "Year recap session Q4 2025, Q1 2026 review of Plan achievements",
+            progressUpdates: []
           },
         ]
       },
@@ -48,16 +59,19 @@ const strategicPlan = [
             name: "Formalize and launch standardized career and development plan, and mentorship plan, for all employees",
             timeline: "2025-Q2 2026",
             targets: "Plan in place by Q2, 2026",
+            progressUpdates: []
           },
           {
             name: "Expand Intro to Operations program for all program areas to engage employees in new learning opportunities",
             timeline: "2025-2029",
             targets: "Plan in place by Q3, 2025 with dedicated program support annually",
+            progressUpdates: []
           },
           {
             name: "Expand airport-paid training opportunities and formalize applications through staff mentors",
             timeline: "2025-2029",
             targets: "Plan in place by Q2, 2025 with dedicated program support annually",
+            progressUpdates: []
           },
         ]
       },
@@ -68,11 +82,13 @@ const strategicPlan = [
             name: "Standardize DEI approach with City HR team to ensure PSP is attracting a fully diverse candidate range for job postings",
             timeline: "2025-2029",
             targets: "Approach standardized by Q2",
+            progressUpdates: []
           },
           {
             name: "Identify barriers to success and pathways to encourage and support under-represented employees to train for and take on supervisory/management roles",
             timeline: "2025-2029",
             targets: "Plan in place by Q2, 2025 with dedicated program support annually",
+            progressUpdates: []
           },
         ]
       },
@@ -88,26 +104,31 @@ const strategicPlan = [
             name: "Design and implement a comprehensive and integrated operational framework that holistically sets out effective and efÏcient processes, procedures and actions",
             timeline: "2025-2029",
             targets: "Framework developed and created by Q4, 2025. Annual assessments and refinements conducted by Q2 each year",
+            progressUpdates: []
           },
           {
             name: "Develop Operational Readiness, Activation and Transition (ORAT) program to ensure construction of new infrastructure becomes an immediate asset and value-add to PSP operations",
             timeline: "2025-2029",
             targets: "Develop between 2025–2006 and implement by Q2, 2027",
+            progressUpdates: []
           },
           {
             name: "Develop and launch a formal Safety Management System (SMS) program to ensure ongoing safety policies, procedures and actions remain embedded in all of PSP’s operations",
             timeline: "2025-Q2 2027",
             targets: "Create program for launch by Q3, 2025, with full implementation by Q2, 2026",
+            progressUpdates: []
           },
           {
             name: "Complete general assessments of current operations and safety practices at PSP",
             timeline: "2025-Q2 2026",
             targets: "Assessment program completion by Q4, 2025. Launch implementation of recommendations by Q2, 2026",
+            progressUpdates: []
           },
           {
             name: "Create and deploy standardized training and procedures for operations and safety programs at PSP",
             timeline: "2025-Q2 2026",
             targets: "Develop training modules and operational modules by Q2, 2025. Annual assessments and refinements conducted by Q2 each year",
+            progressUpdates: []
           },
         ]
       },
@@ -118,16 +139,19 @@ const strategicPlan = [
             name: "Develop and launch ongoing integrated consumer research and guest experience development programs at PSP",
             timeline: "2025-2029",
             targets: "Guest research and experience development programs designed and implemented by Q2, 2026. Annual assessments and refinements conducted by Q2 each year",
+            progressUpdates: []
           },
           {
             name: "Design and implement guest experience consultations and co-ordinated and consistent end-to-end service practices and approaches with all airport campus partners",
             timeline: "2025-2029",
             targets: "Launch consultations with airport partners throughout 2025. Set up a multi-partner Team PSP Guest Experience Steering Group in Q1, 2026 to develop consistent and exceptional service standards and programs throughout all organizations. Annual assessments and refinements conducted in Q4 each year",
+            progressUpdates: []
           },
           {
             name: "Plan, track, attain and maintain high levels of guest satisfaction and seamless wayfinding standards throughout airport construction program",
             timeline: "2025-2029",
             targets: "Design consistent high-impact storyboards on PSP’s future by Q2, 2025. Implement as required. Attain 85% satisfaction rates for guest experience and ease of wayfinding through regular guest surveys. Continue to address and continue to reduce the number of complaints received",
+            progressUpdates: []
           },
         ]
       },
@@ -138,16 +162,19 @@ const strategicPlan = [
             name: "Incorporate newer established technology at parking lots, and passenger and employee checkpoints to increase efÏciency and throughput",
             timeline: "2025-2029",
             targets: "New checkpoint technology introduced by Q3, 2025, and fully integrated by Q1, 2026. Annual assessments and refinements by Q4 each year",
+            progressUpdates: []
           },
           {
             name: "Develop and introduce digitization pilot programs (such as AI, Augmented Reality etc.) to assess impacts on guest experience and operational effectiveness",
             timeline: "2025-2029",
             targets: "Pilot program introduction by 2026, with annual assessment and refinements by Q4 each year.",
+            progressUpdates: []
           },
           {
             name: "Introduce a new state-of-the-art security system (CCTV, intrusion detection, etc.) to maintain the integrity of airport facilities and operations",
             timeline: "2025-2029",
             targets: "New security system introduced by Q4, 2025, with full implementation by Q3, 2026. Annual assessments and refinements by Q4 each year.",
+            progressUpdates: []
           },
         ]
       },
@@ -163,16 +190,19 @@ const strategicPlan = [
             name: "Organize quarterly meetings with each key airport partner group to discuss shared goals, challenges, and opportunities for improvement",
             timeline: "2025-2029",
             targets: "Launch cycle of structured and formalized airport partner meetings every quarter by Q2, 2025, and continue schedule through 2029",
+            progressUpdates: []
           },
           {
             name: "Create and launch a digital platform where partners can access resources, operational updates, and tools for collaboration",
             timeline: "2025-2029",
             targets: "Digital web-page platform (ProgressPSP.com) designed and rolled-out by Q2, 2026, and is maintained and enhanced each year",
+            progressUpdates: []
           },
           {
             name: "Implement feedback mechanisms, including bi-annual surveys and focus groups, to gather input and address partner needs proactively",
             timeline: "Q3 2025, Q3 2026",
             targets: "Program launch in Q3, 2025 and, repeated in 2027 and 2029",
+            progressUpdates: []
           },
         ]
       },
@@ -183,16 +213,19 @@ const strategicPlan = [
             name: "Develop comprehensive revenue-sharing agreements with concessionaires and service providers",
             timeline: "2025-2029",
             targets: "Convert most promising partnership engagement program outcomes into 3 pilot revenue-sharing agreements between 2025 and 2029",
+            progressUpdates: []
           },
           {
             name: "Establish new business development opportunities through ongoing joint ventures",
             timeline: "2025-2029",
             targets: "Convert most promising partnership engagement program outcomes into 2 pilot joint venture agreements between 2025 and 2029",
+            progressUpdates: []
           },
           {
             name: "Create innovative sponsorship and advertising programs",
             timeline: "2025-2028",
             targets: "Design multi-year sponsorship and advertising packages by Q1, 2026 and assess ROI through 2027 and 2028",
+            progressUpdates: []
           },
         ]
       },
@@ -203,16 +236,19 @@ const strategicPlan = [
             name: "Develop an annual report highlighting PSP’s contributions to the local economy, job creation, and tourism, and share it with community stakeholders",
             timeline: "2025-2029",
             targets: "Report broadcast by Q1 each year, with reviews and refinements annually",
+            progressUpdates: []
           },
           {
             name: "Encourage local and small business entities to participate in PSP’s operations, by conducting semi-annual outreach, particularly in concessions, events, and sustainability initiatives",
             timeline: "2025-2029",
             targets: "Design and launch community outreach program in 2025, and expand program each year",
+            progressUpdates: []
           },
           {
             name: "Host annual roundtable events for local government and community representatives to discuss shared goals, such as community economic development, tourism promotion and infrastructure projects.",
             timeline: "2025-2029",
             targets: "Design and implement annual roundtable events by Q4, 2025 and commit to annual frequency through to 2029",
+            progressUpdates: []
           },
         ]
       },
@@ -228,16 +264,19 @@ const strategicPlan = [
             name: "Develop a 5-year capital budget that forecasts funding needs and allocates resources based on project urgency, ROI, and alignment with strategic priorities",
             timeline: "2025-2029",
             targets: "5-year capital budget delivered by Q2, 2025. Annual assessment and refinements conducted by Q2 of each subsequent year",
+            progressUpdates: []
           },
           {
             name: "Design and Implement an infrastructure scoring system to evaluate projects based on factors such as impact on passenger throughput and guest experience, regulatory compliance, and long-term operational benefits",
             timeline: "2025-2029",
             targets: "Infrastructure scoring system and evaluation process developed and launched by Q3, 2025. Annual review and refinements conducted by Q2 of each subsequent year",
+            progressUpdates: []
           },
           {
             name: "Regularly assess progress on infrastructure planning and make necessary adjustments based on evolving priorities or unexpected changes",
             timeline: "2025-2029",
             targets: "Comprehensive quarterly assessment program established by Q3, 2025. Annual program review and refinements conducted by Q2 of each subsequent year",
+            progressUpdates: []
           },
         ]
       },
@@ -248,16 +287,19 @@ const strategicPlan = [
             name: "Enable expanded international air service development by establishing Federal Inspection Services facilities and Customs and Border Protection personnel at PSP",
             timeline: "2025-2029",
             targets: "FIS facilities and CBP presence established by Q1, 2027 Year-round non-stop service to Chicago, Atlanta or New York by Q1, 2027 Expand international service to secondary Canadian non-preclearance cities and establish 1 new route to a Mexican destination by Q1, 2028 3% annual passenger growth and establish infrastructure strategy for cargo growth by Q1, 2027",
+            progressUpdates: []
           },
           {
             name: "Pursue and maximize air service development opportunities for PSP in passenger and cargo markets (routes, route capacity, frequency, competition/customer choice)",
             timeline: "2025-Q1 2027",
             targets: "Business plan developed and implemented by Q4, 2025 Facility plan developed and implemented by Q4, 2025",
+            progressUpdates: []
           },
           {
             name: "Maximize non-aeronautical revenue opportunities for the community’s asset through an aligned airport-wide business plan and facility development plan (e.g. for Parking, Consolidated Rent-A-Car facility, Concessions and Other Services)",
             timeline: "2025-Q4 2025",
             targets: "Business plan developed and implemented by Q4, 2025",
+            progressUpdates: []
           },
         ]
       },
@@ -268,11 +310,13 @@ const strategicPlan = [
             name: "Build and implement program for the successful management and maintenance of facilities throughout facility expansion and construction phasing",
             timeline: "2025-Q4 2025",
             targets: "Program built and launched by Q3, 2025",
+            progressUpdates: []
           },
           {
             name: "Secure and deploy executive management consultant to support the implementation of the: capital program; expansion and construction sequencing; and the organizational strategy",
             timeline: "2025-2029",
             targets: "Executive management consultant retained by Q1, 2025. Overarching program plan developed and launched by Q3, 2025. Annual review and refinements conducted by Q2 of each subsequent year",
+            progressUpdates: []
           },
         ]
       },
@@ -288,26 +332,31 @@ const strategicPlan = [
             name: "Hire and onboard a PSP Sustainability Specialist",
             timeline: "Q2 2025",
             targets: "Sustainability Specialist onboard by Q2, 2025",
+            progressUpdates: []
           },
           {
             name: "Conduct a detailed assessment of all current organizational and airport management activities and, create a holistic action plan to adopt sustainable operating practices",
             timeline: "2025-Q1 2026",
             targets: "Sustainability action plan launched Q1, 2026",
+            progressUpdates: []
           },
           {
             name: "Create a comprehensive recycling program throughout PSP",
             timeline: "2025 - Q1 2026",
             targets: "Phase 1 of airport recycling program launched by Q3, 2025 Phase 2 of airport recycling program launched by Q1, 2026",
+            progressUpdates: []
           },
           {
             name: "Transition to renewable energy sources in alignment with City, state and federal climate goals",
             timeline: "2025-Q1 2029",
             targets: "Ensure complete alignment with established local, state and federal renewable energy targets by Q1, 2029",
+            progressUpdates: []
           },
           {
             name: "Establish Airport Council International –North America’s Carbon Reduction Accreditation Program at PSP",
             timeline: "2025-2029",
             targets: "Achieve Level 1 Program status by 2026 and Level 2 Program status by 2029",
+            progressUpdates: []
           },
         ]
       },
@@ -318,16 +367,19 @@ const strategicPlan = [
             name: "Establish and implement net-zero carbon, energy and waste frameworks within organization",
             timeline: "2025-Q1 2027",
             targets: "Net-zero carbon, energy and waste frameworks completed by Q1, 2026 Program implemented by Q2, 2026 Program assessed, enhanced and fully embedded annually by Q1, 2027",
+            progressUpdates: []
           },
           {
             name: "Identify and implement joint or supportive net-zero emissions strategies with key PSP stakeholder groups",
             timeline: "2025-2029",
             targets: "PSP & Stakeholder Co-operative Net Zero Emissions Strategy Assessment completed by Q3, 2026 Program implemented by Q1, 2027 and assessed and refined annually",
+            progressUpdates: []
           },
           {
             name: "Develop and implement lease and use agreements that jointly reduce climate impacts and improve climate action goals",
             timeline: "2025-2029",
             targets: "New lease and use agreements developed by Q4, 2025 Program implemented by Q1, 2026 and assessed and refined annually",
+            progressUpdates: []
           },
         ]
       },
@@ -338,11 +390,13 @@ const strategicPlan = [
             name: "Conduct and communicate an annual financial assessment of market conditions and related sustainability implications",
             timeline: "2025-2029",
             targets: "First financial assessment report developed and broadcast by Q2, 2025. Report reviewed and refined annually",
+            progressUpdates: []
           },
           {
             name: "Develop policies and programs for fiscal management that track and report on both climate and operating impacts",
             timeline: "2025-2029",
             targets: "Introduce policy and program refinements to fiscal management area by Q2, 2026. Review and refine annually",
+            progressUpdates: []
           },
         ]
       },
@@ -383,6 +437,7 @@ const flattenStrategicPlan = (plan) => {
           ],
           strategicGoal: goal.goalName,
           fullTargets: initiative.targets, // Store full targets for detailed view in modal
+          progressUpdates: initiative.progressUpdates || [], // Ensure this field exists, even if empty
         });
       });
     });
@@ -437,7 +492,26 @@ const InitiativeDetailModal = ({ initiative, onClose }) => {
           <strong className="text-gray-700 block mb-1">Full Targets:</strong>
           <p className="text-gray-700 whitespace-pre-wrap">{initiative.fullTargets}</p>
         </div>
-        <div className="flex justify-end">
+
+        {/* NEW SECTION: Progress Log */}
+        {initiative.progressUpdates && initiative.progressUpdates.length > 0 && (
+          <div className="mb-4 mt-6 border-t pt-4 border-gray-200">
+            <strong className="text-gray-700 block mb-2 text-lg">Progress Log:</strong>
+            <div className="space-y-3">
+              {initiative.progressUpdates
+                .sort((a, b) => new Date(b.date) - new Date(a.date)) // Sort by date, newest first
+                .map((update, idx) => (
+                  <div key={idx} className="bg-gray-50 p-3 rounded-lg shadow-sm text-sm text-gray-800">
+                    <p className="font-semibold text-gray-600 mb-1">{update.date}:</p>
+                    <p>{update.text}</p>
+                  </div>
+                ))}
+            </div>
+          </div>
+        )}
+        {/* END NEW SECTION */}
+
+        <div className="flex justify-end mt-6"> {/* Adjusted margin-top */}
           <button
             onClick={() => {
               console.log("Close button clicked. Calling onClose.");
@@ -648,12 +722,19 @@ function App() {
       "Timeline",
       "Status",
       "Full Targets",
+      "Progress Updates" // Added for CSV export
     ];
 
     const csvRows = [];
     csvRows.push(headers.map(escapeCsvField).join(','));
 
     filteredInitiatives.forEach(initiative => {
+      // Flatten progress updates for CSV
+      const progressUpdatesText = initiative.progressUpdates
+        .sort((a, b) => new Date(a.date) - new Date(b.date)) // Sort chronologically for CSV
+        .map(update => `${update.date}: ${update.text}`)
+        .join(' | '); // Use a clear separator for multiple updates
+
       const row = [
         initiative.priority,
         initiative.strategicGoal,
@@ -662,6 +743,7 @@ function App() {
         initiative.timeline,
         initiative.status,
         initiative.fullTargets,
+        progressUpdatesText // Added for CSV export
       ].map(escapeCsvField);
       csvRows.push(row.join(','));
     });
