@@ -733,7 +733,7 @@ function App() {
               <img
                 src="/QRCode for PSP Flight Path Updates Small.jpeg" // Updated path to the new image file name
                 alt="QR Code for PSP Flight Path Updates"
-                className="rounded-lg shadow-md hover:opacity-80 transition-opacity duration-200"
+                className="rounded-lg shadow-md hover:opacity-80 transition-opacity duration-200 w-16 h-16" // Added w-16 h-16 for smaller size
               />
             </a>
             <p className="text-xs text-center mt-1 opacity-80">Scan for Flight Path Updates</p>
