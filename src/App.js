@@ -210,7 +210,7 @@ const strategicPlan = [
             targets: "Design and launch community outreach program in 2025, and expand program each year",
           },
           {
-            name: "Host annual roundtable events for local government and community representatives to discuss shared goals, such as community economic development, tourism promotion and infrastructure projects.",
+            name: "Host annual roundtable events for local government and community representatives to discuss shared goals, suchs as community economic development, tourism promotion and infrastructure projects.",
             timeline: "2025-2029",
             targets: "Design and implement annual roundtable events by Q4, 2025 and commit to annual frequency through to 2029",
           },
@@ -383,7 +383,7 @@ const flattenStrategicPlan = (plan) => {
           ],
           strategicGoal: goal.goalName,
           fullTargets: initiative.targets, // Store full targets for detailed view in modal
-          updates: [], // NEW: Initialize an empty array for updates
+          updates: [], // Initialize an empty array for updates
         });
       });
     });
@@ -514,6 +514,10 @@ function App() {
   const [showDetailModal, setShowDetailModal] = useState(false);
   const [currentInitiative, setCurrentInitiative] = useState(null);
 
+  // DEBUGGING: Add a console log to confirm totalInitiatives is defined here
+  console.log("App component rendering. totalInitiatives:", totalInitiatives);
+
+
   const uniqueOwners = useMemo(() => ['All', ...owners], []);
   const uniqueStatuses = useMemo(() => ['All', ...new Set(initialInitiativesWithUpdates.map(i => i.status))], []);
   const uniquePriorities = useMemo(() => ['All', ...new Set(strategicPlan.map(p => p.priorityName))], []);
@@ -541,12 +545,12 @@ function App() {
     const atRiskCount = initiatives.filter(i => i.status === 'At Risk').length;
     const completeCount = initiatives.filter(i => i.status === 'Complete').length;
     return { onTrackCount, atRiskCount, completeCount };
-  }, [initiatives]);
+  }, [initiatives]); // Changed dependency to 'initiatives' to reflect live updates
 
   const priorityCardData = useMemo(() => {
     const data = {};
     strategicPlan.forEach(priority => {
-      const initiativesInPriority = initiatives.filter(i => i.priority === priority.priorityName);
+      const initiativesInPriority = initiatives.filter(i => i.priority === priority.priorityName); // Changed to 'initiatives'
       const total = initiativesInPriority.length;
       const onTrack = initiativesInPriority.filter(i => i.status === 'On Track').length;
       const atRisk = initiativesInPriority.filter(i => i.status === 'At Risk').length;
@@ -554,7 +558,7 @@ function App() {
       data[priority.priorityName] = { total, onTrack, atRisk, complete };
     });
     return data;
-  }, [initiatives]);
+  }, [initiatives]); // Changed dependency to 'initiatives' to reflect live updates
 
   const getStatusDisplay = (status) => {
     switch (status) {
@@ -687,6 +691,8 @@ function App() {
             Palm Springs International Airport
             <span className="block text-xl sm:text-2xl font-semibold mt-1">2025-2029 Strategic Plan</span>
           </h1>
+          {/* DEBUGGING TAG: This will confirm if the latest code is deployed */}
+          <span className="ml-4 px-2 py-1 bg-red-500 text-white text-xs font-bold rounded-full">-- DEBUG VERSION --</span>
         </div>
         <div className="flex items-center space-x-4 mt-2 sm:mt-0">
           {/* QR Code section updated with actual QR code image and Microsoft Forms URL */}
