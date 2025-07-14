@@ -487,7 +487,7 @@ const InitiativeDetailModal = ({ initiative, onClose }) => {
           <p className="text-gray-700 whitespace-pre-wrap">{initiative.fullTargets}</p>
         </div>
 
-        {/* NEW SECTION: Progress Log */}
+        {/* NEW SECTION: Progress Log - This section will only appear if progressUpdates is NOT empty */}
         {initiative.progressUpdates && initiative.progressUpdates.length > 0 && (
           <div className="mb-4 mt-6 border-t pt-4 border-gray-200">
             <strong className="text-gray-700 block mb-2 text-lg">Progress Log:</strong>
