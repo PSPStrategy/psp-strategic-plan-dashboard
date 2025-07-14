@@ -1,15 +1,10 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { LayoutDashboard, CheckCircle2, AlertTriangle, XCircle, ClipboardList, Info, BarChart, PieChart, Users, Target, Calendar, Printer, FileText } from 'lucide-react';
 
-// --- Configuration for Google Sheets API ---
-// Your Google Sheet ID is pre-filled here.
+// --- Configuration ---
+// Your Google Sheet ID is pre-filled here, but it's now primarily used by the API route.
+// It's kept here for context, but the API call itself doesn't need it on the client side.
 const SPREADSHEET_ID = '1Ei9pG3fdEjL2-2dD2LC6ywpvqS0yeZvHEMK2_ybRKDw';
-
-// IMPORTANT: Service Account Credentials are loaded securely from Vercel Environment Variables.
-// The environment variable name is GOOGLE_SERVICE_ACCOUNT_CREDENTIALS.
-// It must contain the full JSON key string.
-const SERVICE_ACCOUNT_CREDENTIALS = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_CREDENTIALS);
-// --- END Configuration ---
 
 // List of owners provided by the user, sorted alphabetically, including TBD
 const owners = [
@@ -17,50 +12,20 @@ const owners = [
   "Josue", "Nikki", "Ramon", "Ryan", "TBD", "Victoria", "Yaslin"
 ].sort();
 
-// Helper function to parse Google Sheet data into the desired initiative structure
-const parseSheetData = (values) => {
-  if (!values || values.length < 2) {
-    console.warn("No data or only header row found in Google Sheet.");
+// Helper function to parse data received from the API route
+// This function is similar to the one in the API route, but it processes data
+// that has already been fetched and structured by the serverless function.
+const parseFetchedData = (data) => {
+  // The API route already returns data in the desired format,
+  // so we just need to ensure it's an array and assign IDs if necessary.
+  if (!Array.isArray(data)) {
+    console.error("API did not return an array of initiatives:", data);
     return [];
   }
-
-  const initiatives = [];
-
-  // Skip header row (values[0]) and start from the first data row (values[1])
-  for (let i = 1; i < values.length; i++) {
-    const row = values[i];
-    const initiative = {};
-
-    // Map sheet columns to initiative properties based on the CSV structure
-    // Ensure these indices match your Google Sheet's column order
-    initiative.priority = row[0] || 'N/A'; // Column A
-    initiative.strategicGoal = row[1] || 'N/A'; // Column B
-    initiative.name = row[2] || 'N/A'; // Column C
-    initiative.timeline = row[3] || 'N/A'; // Column D
-    initiative.fullTargets = row[4] || 'N/A'; // Column E (Full Targets)
-    initiative.owner = row[5] || 'TBD'; // Column F
-    initiative.status = row[6] || 'On Track'; // Column G
-
-    // Parse Progress Updates (stored as JSON string in the sheet)
-    try {
-      // Ensure row[7] exists before attempting to parse
-      initiative.progressUpdates = row[7] ? JSON.parse(row[7]) : []; // Column H
-    } catch (e) {
-      console.error("Error parsing progressUpdates JSON for row", i, ":", row[7], e);
-      initiative.progressUpdates = []; // Default to empty array on error
-    }
-
-    // Simulate progress for milestones (this will still be random, as sheet doesn't provide it)
-    const simulatedProgress = Math.floor(Math.random() * 90) + 10; // Random progress between 10% and 99%
-    initiative.milestones = [
-      `Progress: ${simulatedProgress}% Complete`,
-      `Key Target: ${initiative.fullTargets.length > 80 ? initiative.fullTargets.substring(0, 80) + '...' : initiative.fullTargets}`,
-    ];
-
-    initiative.id = i; // Use row index as a simple ID for React keys
-    initiatives.push(initiative);
-  }
-  return initiatives;
+  return data.map((item, index) => ({
+    ...item,
+    id: item.id || index + 1 // Ensure each item has a unique ID
+  }));
 };
 
 // Modal component for detailed initiative view (remains the same)
@@ -244,35 +209,24 @@ function App() {
   const [showDetailModal, setShowDetailModal] = useState(false);
   const [currentInitiative, setCurrentInitiative] = useState(null);
 
-  // Fetch data from Google Sheets
+  // Fetch data from the Vercel API route
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
       setError(null);
       try {
-        // Dynamically import google-auth-library to avoid issues with Vercel build
-        // This is a common pattern for server-side dependencies in client-side apps
-        // that are built by tools like Vercel.
-        const { GoogleAuth } = await import('google-auth-library');
-        const { google } = await import('googleapis');
-
-        const auth = new GoogleAuth({
-          credentials: SERVICE_ACCOUNT_CREDENTIALS,
-          scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'], // Read-only scope
-        });
-
-        const sheets = google.sheets({ version: 'v4', auth });
-
-        const response = await sheets.spreadsheets.values.get({
-          spreadsheetId: SPREADSHEET_ID,
-          range: 'Sheet1!A:H', // Adjust range if your data is in a different sheet/columns
-        });
-
-        const parsedData = parseSheetData(response.data.values);
+        // Make a fetch request to your Vercel API route
+        const response = await fetch('/api/get-sheet-data');
+        if (!response.ok) {
+          const errorData = await response.json();
+          throw new Error(errorData.details || 'Network response was not ok');
+        }
+        const rawData = await response.json();
+        const parsedData = parseFetchedData(rawData); // Parse the data returned by the API route
         setInitiatives(parsedData);
       } catch (err) {
-        console.error("Failed to fetch or parse Google Sheet data:", err);
-        setError("Failed to load data from Google Sheet. Please check configuration and sheet access.");
+        console.error("Failed to fetch data from API route:", err);
+        setError(`Failed to load data: ${err.message}. Please check Vercel logs for serverless function errors.`);
       } finally {
         setLoading(false);
       }
