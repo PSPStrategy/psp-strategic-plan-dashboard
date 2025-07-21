@@ -9,7 +9,7 @@ const SPREADSHEET_ID = '1Ei9pG3fdEjL2-2dD2LC6ywpvqS0yeZvHEMK2_ybRKDw';
 // List of owners provided by the user, sorted alphabetically, including TBD
 const owners = [
   "Christina", "Daniel", "Ed", "Harman", "Harry", "Jacob", "Jason", "Jeremy",
-  "Josue", "Nikki", "Ramon", "Ryan", "TBD", "Victoria", "Yaslin"
+  "Josue", "Nikki", "Ramon", "Ryan", "TBD", "Victoria", "Yaslin", "HR"
 ].sort();
 
 // Helper function to parse data received from the API route
