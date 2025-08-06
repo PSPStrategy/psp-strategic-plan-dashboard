@@ -43,10 +43,8 @@ const parseSheetData = (values) => {
       initiative.progressUpdates = []; // Default to empty array on error
     }
 
-    // Simulate progress for milestones (this will still be random, as sheet doesn't provide it)
-    const simulatedProgress = Math.floor(Math.random() * 90) + 10; // Random progress between 10% and 99%
+    // Removed the simulated progress line from milestones
     initiative.milestones = [
-      `Progress: ${simulatedProgress}% Complete`,
       `Key Target: ${initiative.fullTargets.length > 80 ? initiative.fullTargets.substring(0, 80) + '...' : initiative.fullTargets}`,
     ];
 
